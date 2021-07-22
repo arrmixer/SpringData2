@@ -16,7 +16,7 @@ public class Student {
     @GeneratedValue
     private Integer studentId;
 
-    @Embedded
+    @Embedded // not an entity itself
     private Person attendee;
 
     @Column

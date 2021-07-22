@@ -23,7 +23,7 @@ public interface StudentRepository extends CrudRepository<Student, Integer>{
     List<Student> findByAgeGreaterThan(int minimumAge);
     List<Student> findByAgeLessThan(int maximumAge);
     List<Student> findByAttendeeLastNameIgnoreCase(String lastName);
-    List<Student> findByAttendeeLastNameLike(String likeString);
+    List<Student> findByAttendeeLastNameLike(String likeString);  // wild card search with like keyword
     Student findFirstByOrderByAttendeeLastNameAsc();
     Student findTopByOrderByAgeDesc();
     List<Student> findTop3ByOrderByAgeDesc();
